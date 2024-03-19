@@ -6,7 +6,7 @@
 
 **Abstract:** We propose a new methodology for leveraging deep generative priors for Bayesian inference in imaging inverse problems. Modern Bayesian imaging often relies on score-based diffusion generative priors, which deliver remarkable point estimates but significantly underestimate uncertainty. Push-forward models such as variational autoencoders and generative adversarial networks provide a robust alternative, leading to Bayesian models that are provably well-posed and which produce accurate uncertainty quantification results for small problems. However, push-forward models scale poorly to large problems because of issues related to bias, mode collapse and multimodality. We propose to address this difficulty by embedding a conditional deep generative prior within an empirical Bayesian framework. We consider generative priors with a super-resolution architecture, and perform inference by using a Bayesian computation strategy that simultaneously computes the maximum marginal likelihood estimate (MMLE) of the low-resolution image of interest, and draws Monte Carlo samples from the posterior distribution of the high-resolution image, conditionally to the observed data and the MMLE. The methodology is demonstrated with an image deblurring experiment and comparisons with the state-of-the-art.
 
-![fox_images](https://github.com/SavvasMel/SOUL-SRFlow-Project/assets/79579567/e4a88f53-9ff5-4ae4-b086-eb79413c30ee)
+![fox_images](https://github.com/SavvasMel/SOUL-SRFlow-Project/assets/79579567/72526390-ece9-4933-917c-3cfa21eab449)
 
 ## Setup
 
