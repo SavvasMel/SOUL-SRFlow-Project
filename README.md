@@ -82,12 +82,12 @@ python3 SOUL-SRFlow.py --conf_path=./confs/SRFlow-DA_DF2K_8X.yml --index_image=1
 
 **Sampling:** internal number of sampling steps $m_n$ , stepsize $\gamma_n$ , number of burn-in period steps $b$. You can change those as:
 ```bash
-python3 SOUL-SRFlow.py --conf_path=./confs/SRFlow-DA_DF2K_8X.yml --mn =5 --stepsize=5e-5 --b_iter=100  # default choices for mn and stepsize and burn-in period.
+python3 SOUL-SRFlow.py --conf_path=./confs/SRFlow-DA_DF2K_8X.yml --mn=5 --stepsize=5e-5 --b_iter=100  # default choices for mn and stepsize and burn-in period.
 ```
 
 **Optimisation:** total number of optimisation steps $N$, scales $c$ and $p$ (```d_scale``` and ```d_exp``` respectively in the code) which both determine the optimisation stepsize as $\delta_n = c\cdot n^{-p}/d$. You can change those as:
 ```bash
-python3 SOUL-SRFlow.py --conf_path=./confs/SRFlow-DA_DF2K_8X.yml --niter=6e4 --d_scale = 0.01 --d_exp=0.7   # default choices for N and scales c and p.
+python3 SOUL-SRFlow.py --conf_path=./confs/SRFlow-DA_DF2K_8X.yml --niter=6e4 --d_scale=0.01 --d_exp=0.7   # default choices for N and scales c and p.
 ```
 
 **Prior distribution:** You can change the standard deviation of the Gaussian prior on $z$ by passing ```--sigma_z``` as the previous examples. Note that $\sigma_z\in (0,1]$.
